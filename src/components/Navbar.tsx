@@ -3,7 +3,7 @@ import Logo from '../assets/images/ielts.png'
 
 const Navbar = () => {
     return (
-        <div className='bg-fuchsia-950 sticky flex items-center justify-between md:px-10 px-5 py-4  text-white font-semibold '>
+        <div className='bg-fuchsia-700 sticky flex items-center justify-between md:px-10 px-5 py-4  text-white font-semibold '>
 
             <div className='flex gap-6 items-center font-extrabold'>
                 <img
