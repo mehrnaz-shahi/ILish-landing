@@ -7,7 +7,21 @@ import Chatgpt from "./assets/images/ChatGPT.png";
 import Book from "./assets/images/book.png";
 import Track from "./assets/images/track.png";
 
+import ReactGA from 'react-ga';
+
+// کد ردیابی خود را اینجا قرار دهید
+ReactGA.initialize('G-K69DB6RWY6');
+
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
+
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked Download button'
+    });
+  };
 
   return (
     <>
@@ -36,7 +50,8 @@ function App() {
               Using Chatgpt to improve your skills
             </h3>
 
-            <button style={{ backgroundColor: '#D7BAFF' }} className="md:px-24 px-16 w-full  py-4 rounded-3xl mt-14 font-bold">Download app</button>
+            <button onClick={handleClick}
+            style={{ backgroundColor: '#D7BAFF' }} className="md:px-24 px-16 w-full  py-4 rounded-3xl mt-14 font-bold">Download app</button>
 
           </div>
 
