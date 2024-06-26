@@ -14,8 +14,8 @@ function App() {
       <Navbar />
 
       <div className="md:mt-10 mt-6 md:px-8 px-4 py-2">
-        <div className=" bg-fuchsia-700 bg-opacity-85  md:h-[26rem] h-[43rem] rounded-xl relative p-8 flex flex-col md:items-start items-center 
-        md:text-xl text-sm">
+        <div className="  bg-opacity-85  md:h-[26rem] h-[43rem] rounded-xl relative p-8 flex flex-col md:items-start items-center 
+        md:text-xl text-sm" style={{backgroundColor: "rgb(81 34 108)"}}>
 
           <div className="absolute md:bottom-8 flex md:right-10 bottom-10 max-md:w-full items-center justify-center">
             <img src={QuestionMockup} alt="question" className="lg:h-80  lg:w-40   h-72 w-32 -mr-10
