@@ -7,13 +7,19 @@ import Chatgpt from "./assets/images/ChatGPT.png";
 import Book from "./assets/images/book.png";
 import Track from "./assets/images/track.png";
 
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
+import { useEffect } from "react";
 
 ReactGA.initialize('G-K69DB6RWY6');
 
 ReactGA.pageview(window.location.pathname + window.location.search);
 
+
 function App() {
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
 
   const handleClick = () => {
     ReactGA.event({
