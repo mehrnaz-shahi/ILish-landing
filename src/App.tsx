@@ -9,7 +9,6 @@ import Track from "./assets/images/track.png";
 
 import ReactGA from 'react-ga';
 
-// کد ردیابی خود را اینجا قرار دهید
 ReactGA.initialize('G-K69DB6RWY6');
 
 ReactGA.pageview(window.location.pathname + window.location.search);
