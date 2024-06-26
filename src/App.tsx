@@ -20,6 +20,8 @@ function App() {
       category: 'User',
       action: 'Clicked Download button'
     });
+
+    alert("This app will be published soon.");
   };
 
   return (
